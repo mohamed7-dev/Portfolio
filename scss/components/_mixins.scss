@@ -1,0 +1,15 @@
+//import custom variables
+@use "../custom" as *;
+
+//gradient mixin
+@mixin gradient {
+    background: linear-gradient(90deg, $primary , $secondary);
+}
+
+//positioning perfect to the center
+@mixin position-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

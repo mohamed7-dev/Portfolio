@@ -1,0 +1,43 @@
+//import scss files
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+section.intro{
+    @include gradient;
+    width: 100%;
+    min-height: 90vh;
+    padding: 5rem 0 0 0 ;
+
+    & .video-container{
+        position: relative;
+        a{
+            @include media-breakpoint-down(sm){
+                transform: translate(-50%,-50%);
+            }
+            @include position-center;
+            transform: translate(0%,-50%);
+            i{
+                color: $secondary;
+                font-size: 6rem;
+            }
+        }
+    }
+}
+
+
+.animation-circle{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border:0.50rem solid $white;
+    animation: pulse 1.5s linear infinite;
+    &.circle-1{
+        animation-delay: 1s;
+    }
+    &.circle-2{
+        animation-delay: 1.5s;
+    }
+}
