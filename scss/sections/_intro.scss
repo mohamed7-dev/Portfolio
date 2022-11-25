@@ -5,8 +5,8 @@
 section.intro{
     @include gradient;
     width: 100%;
-    min-height: 90vh;
     padding: 5rem 0 0 0 ;
+    position: relative;
 
     & .video-container{
         position: relative;

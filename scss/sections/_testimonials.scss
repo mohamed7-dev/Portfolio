@@ -1,0 +1,47 @@
+//import scss files
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+section.testmonials{
+    @include gradient;
+    padding: 0;
+    position: relative;
+
+    & .card{
+        background-color: rgba($white, 0.6);
+        padding: 2rem 1rem;
+        text-align: center;
+        border-radius: 0.6rem;
+        height: auto;
+
+        i{
+            font-size: 1.5rem;
+            color: rgba($primary, 0.6);
+        }
+    }
+
+    & .image{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 5rem;
+        height: 5rem;
+
+        img{
+            border: 0.3rem solid rgba($primary, 0.6);
+        }
+    }
+
+    & .name{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        color: $white;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        p{
+            padding-top: 0.8rem;
+        }
+    }
+}

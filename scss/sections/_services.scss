@@ -1,0 +1,35 @@
+// import scss files 
+@use "../custom" as *;
+
+section.services{
+    padding: 0 0 5rem 0;
+    & .content-container{
+        padding: 1rem;
+        .icon{
+            i{
+                font-size: 3rem;
+                color: $primary;
+            }
+        }
+
+        h2{
+            color: $primary;
+        }
+
+        button{
+            border-color: $primary;
+        }
+    }
+}
+
+.services .web-dev{
+    @include media-breakpoint-down(sm){
+        & .image-container{
+            order:2;
+        }
+
+        & .content-container{
+            order: 1;
+        }
+    }
+}

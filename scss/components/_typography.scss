@@ -2,3 +2,43 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
+//section heading line
+.heading-line{
+    position: relative;
+    margin-bottom: 5rem;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        width: 10rem;
+        height: 0.1rem;
+        background-color: $primary;
+        display: block;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        width:5rem;
+        height: 0.4rem;
+        background-color: $primary;
+        display: block;
+    }
+}
+
+
+// border right 
+.border-right{
+    border-right: 0.1rem solid $gray-300;
+    @include media-breakpoint-down(sm){
+        border-right: 0.1rem solid transparent;
+        margin-bottom: 1rem;
+    }
+}
