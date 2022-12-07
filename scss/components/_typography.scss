@@ -5,7 +5,7 @@
 //section heading line
 .heading-line{
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     &::before{
         content: "";
         position: absolute;
@@ -42,3 +42,10 @@
         margin-bottom: 1rem;
     }
 }
+
+svg{
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+

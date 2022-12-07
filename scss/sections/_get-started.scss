@@ -1,0 +1,30 @@
+//import scss files
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.get-started{
+    padding: 3rem 0;
+    background-color: $gray-300;
+
+    .gradient{
+        @include gradient;
+    }
+}
+
+.left-info{
+    padding: 3rem;
+}
+
+.right-form{
+    padding: 3rem;
+    h4{
+        color: $primary;
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    input{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}
