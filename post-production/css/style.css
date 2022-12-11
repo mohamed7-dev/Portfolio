@@ -11093,4 +11093,113 @@ section.testmonials .name p {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+footer.footer {
+  background-color: #151414;
+  padding: 3rem 0 0 0;
+}
+footer.footer .contact-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  footer.footer .contact-container {
+    gap: 1rem;
+    padding-bottom: 0.9rem;
+  }
+}
+footer.footer .contact-container .icon-container i {
+  font-size: 3.1rem;
+  color: #9926f0;
+}
+@media (max-width: 575.98px) {
+  footer.footer .contact-container .icon-container i {
+    font-size: 1.5rem;
+  }
+}
+footer.footer .contact-container .info-container {
+  padding-top: 0.5rem;
+}
+footer.footer .contact-container .info-container a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer.footer .contact-container .info-container a:hover {
+  color: #9926f0;
+}
+@media (max-width: 575.98px) {
+  footer.footer .contact-container .info-container a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 575.98px) {
+  footer.footer .contact-container .info-container p {
+    font-size: 0.8rem;
+  }
+}
+footer.footer .footer-social {
+  background-color: #212121;
+}
+footer.footer .footer-social .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+footer.footer .footer-social .right-side a {
+  text-decoration: none;
+}
+footer.footer .footer-social .right-side a i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+footer.footer .footer-social .right-side a i:hover {
+  color: #9926f0;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: block;
+}
+.footer-nav-list li {
+  margin-bottom: 0.5rem;
+}
+.footer-nav-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-nav-list li a:hover {
+  color: #9926f0;
+}
+
+.copy-right-content {
+  color: #495057;
+  text-transform: capitalize;
+}
+.copy-right-content a {
+  text-decoration: none;
+  color: #fff;
+}
+.copy-right-content a:hover {
+  text-decoration: underline;
+  color: #9926f0;
+}
+
+.top-btn {
+  position: fixed;
+  z-index: 2;
+  right: 1.5rem;
+  bottom: -100%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #9926f0;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.top-btn i {
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,119 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+footer.footer{
+    background-color: $footer-bg;
+    padding: 3rem 0 0 0;
+
+    .contact-container{
+        display: flex;
+        gap:0.5rem;
+        align-items:center;  
+        @include media-breakpoint-down(sm){
+            gap: 1rem;
+            padding-bottom: 0.9rem;
+        }
+        .icon-container{
+            i{
+                font-size: 3.1rem;
+                color: $primary;
+                @include media-breakpoint-down(sm){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .info-container{
+            padding-top: 0.5rem;      
+            a{
+                text-decoration: none;
+                color: $white;
+                font-size: 1rem;
+                font-weight: bold;
+                &:hover{
+                    color: $primary;
+                }
+
+                @include media-breakpoint-down(sm){
+                    font-size: 0.8rem;
+                }
+            }
+
+            p{
+                @include media-breakpoint-down(sm){
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .footer-social{
+        background-color: $footer-social-bg;
+        .right-side{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            a{
+                text-decoration: none;
+
+                i{
+                    color: $white;
+                    font-size: 1.5rem;
+
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer nav list style 
+.footer-nav-list{
+    list-style: none;
+    display: block;
+
+    li{
+        margin-bottom: 0.5rem;
+        a{
+            text-decoration: none;
+            color: $white;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+// copy-right style 
+.copy-right-content{
+    color: $gray-700;
+    text-transform: capitalize;
+    a{
+        text-decoration: none;
+        color: $white;
+        &:hover{
+            text-decoration: underline;
+            color: $primary;
+        }
+    }
+}
+
+// to top btn style
+.top-btn{
+    position: fixed;
+    z-index:2;
+    right: 1.5rem;
+    bottom: -100%;
+    width: 3rem;
+    height: 3rem;
+    background-color: $primary;
+    border: none;
+    @include transition-effect;
+    i{
+        color: $white;
+    }
+}
